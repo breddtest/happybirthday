@@ -30,15 +30,15 @@ body {
     }
     25% {
         background-color: #e74c3c; /* First color change */
-        font-size: 34px; /* First font size change */
+        font-size: 28px; /* First font size change */
     }
     50% {
         background-color: #27ae60; /* Second color change */
-        font-size: 44px; /* Second font size change */
+        font-size: 32px; /* Second font size change */
     }
     75% {
         background-color: #f1c40f; /* Third color change */
-        font-size: 54px; /* Reset font size */
+        font-size: 36px; /* Reset font size */
     }
 }
 
