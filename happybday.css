@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url('zealot.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    animation: changeProperties 20s infinite; /* Apply the animation */
+}
+
+@keyframes changeProperties {
+    0%, 100% {
+        background-color: #3498db; /* Initial color and end color */
+        font-size: 24px; /* Initial font size */
+    }
+    25% {
+        background-color: #e74c3c; /* First color change */
+        font-size: 34px; /* First font size change */
+    }
+    50% {
+        background-color: #27ae60; /* Second color change */
+        font-size: 44px; /* Second font size change */
+    }
+    75% {
+        background-color: #f1c40f; /* Third color change */
+        font-size: 54px; /* Reset font size */
+    }
+}
+
+.firework {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: yellow; /* Initial color of the "firework" */
+    border-radius: 50%;
+    animation: explode 2s forwards; /* Apply the explosion animation */
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(20);
+        opacity: 0;
+        background: red; /* Change color during the explosion */
+    }
+}
