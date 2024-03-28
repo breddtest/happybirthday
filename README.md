@@ -1,2 +1,2 @@
 # happybirthday
-An animation to say "Happy Birthday" to someone.
+A website to say "Happy Birthday" to someone.
