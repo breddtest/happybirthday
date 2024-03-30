@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>HAPPY BIRTHDAY</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="happybday.css">
-</head>
-<body>
+  <head>
+    <title>Happy Birthday</title>
+    <link rel="icon" type="image" href="happybday_icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="happybday.css" />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .gradient-custom {
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(
+        45deg,
+        rgba(57, 255, 219, 0.6),
+        rgba(76, 1, 197, 0.6) 100%
+      );
+    }
+  </style>
+  <body>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"
+    ></script>
     <div class="container">
-        <div class="text">Happy Birthday, Zealot!</div>
-        <div class="firework"></div>
+      <div class="firework"></div>
+    </div>
+    <div
+      class="bg-image"
+      style="
+        background-image: url(https://raw.githubusercontent.com/bryanherdianto/happy-birthday/main/zealot.jpg);
+        height: 100vh;
+        z-index: -1;
+      "
+    >
+      <div class="mask gradient-custom">
+        <div class="msg">Happy Birthday Zelot!</div>
+        <div class="age">
+          <span class="first_age">
+            <span class="age1">1</span>
+          </span>
+          <span class="old">8</span>
+          <span class="age2 new">9</span>
+        </div>
+      </div>
     </div>
     <script src="happybday.js"></script>
-</body>
+  </body>
 </html>
